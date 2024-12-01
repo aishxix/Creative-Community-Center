@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Community Center</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static' , filename = 'style.css')}}"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <li><h2>Creative Community Center</h2></li>
+      <ul>
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{url_for('service')}}">Services</a></li>
+        <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+        <li><a href="{{url_for('login')}}">Login</a></li>
+        <li><a href="{{url_for('signup')}}">SignUp</a></li>
+      </ul>
+    </div>
+    <header>
+      <h1>Welcome To Creative Community Center</h1>
+      <p>
+        A platform for creative individuals (like designers, photographers, or
+        artists) to explore services, sign up for updates, and get in touch.
+      </p>
+    </header>
+    <main>
+      <section class="service">
+        <h2>Workshops & Classes</h2>
+        <p> <b>Art & Craft Classes:</b> Painting, pottery, sculpture, and textile design.</p>
+        <p><b>Technology & Media Workshops:</b> Photography, video editing, graphic
+          design, and coding.</p>
+       <p> <b>Performing Arts:</b> Dance, theater, music, and spoken
+          word.</p>
+        <p> <b>Writing & Storytelling:</b> Poetry, blogging, screenwriting, and
+          creative journaling.</p>
+        
+      </section>
+      <section class="service">
+        <h2>Collaboration Spaces</h2>
+        <p><b>Co-Working Space:</b> For artists, designers, and creatives to collaborate.</p>
+         <p> <b>Maker Labs:</b> Equipped with tools for woodworking, 3D printing, and prototyping.</p>
+          <p><b>Music & Recording Studio:</b> For musicians and podcasters.</p>
+        </p>
+      </section>
+      <section class="service">
+        <h2>Events & Exhibitions</h2>
+        <p><b>Open Mic Nights:</b> For poetry, music, or stand-up comedy.</p>
+         <p> <b>Art Exhibitions:</b> Showcasing local artists' work.</p>
+          <p><b>Film Screenings:</b> Indie films, documentaries, or creative animations.</p>
+        </p>
+      </section>
+      <section class="service">
+        <h2>Mentorship & Networking</h2>
+        <p><b>Creative Mentorship:</b> Pairing beginners with experienced professionals.</p>
+         <p> <b>Networking Events:</b> Creative meetups and pitch nights for projects.</p>
+        </p>
+      </section>
+      <a href="{{url_for('signup')}}"
+      ><button class="btn"><span>Join Now</span></button></a
+    >
+    </main>
+    <footer>
+      <p>
+        Ready to get started?
+        <a href="{{url_for('contact')}}">Contact Us</a> today!
+      </p>
+    </footer>
+  </body>
+</html>

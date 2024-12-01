@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static' , filename = 'style.css' )}}"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <li><h2>Creative Community Center</h2></li>
+      <ul>
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{url_for('service')}}">Services</a></li>
+        <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+        <li><a href="{{url_for('login')}}">Login</a></li>
+        <li><a href="{{url_for('signup')}}">SignUp</a></li>
+      </ul>
+    </div>
+    <header>
+      <h1>Our Services</h1>
+      <p>Discover how we can bring your ideas to life!</p>
+    </header>
+    <main>
+      <section class="service">
+        <h2>Custom Fashion Design</h2>
+        <p>
+          Personalized outfits tailored to your preferences. Perfect for special
+          events, casual wear, or reimagining your wardrobe.
+        </p>
+      </section>
+      <section class="service">
+        <h2>Photography Workshops</h2>
+        <p>
+          Beginner-friendly sessions on lighting, composition, and editing.
+          Perfect for aspiring photographers.
+        </p>
+      </section>
+      <section class="service">
+        <h2>Creative Content Creation</h2>
+        <p>
+          Visual content for blogs, portfolios, or personal branding. Stand out
+          online with expert guidance.
+        </p>
+      </section>
+      <section class="service">
+        <h2>Fashion Consultation</h2>
+        <p>
+          Wardrobe assessments, color theory advice, and personalized shopping
+          guides to boost your style.
+        </p>
+      </section>
+      <section class="service">
+        <h2>Event Styling</h2>
+        <p>
+          Styling for birthdays, photoshoots, or themed events to make your
+          moments unforgettable.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Ready to get started?
+        <a href="{{url_for('contact')}}">Contact Us</a> today!
+      </p>
+    </footer>
+  </body>
+</html>

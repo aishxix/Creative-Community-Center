@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static' , filename = 'style.css')}}"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <li><h2>Creative Community Center</h2></li>
+      <ul>
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{url_for('service')}}">Services</a></li>
+        <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+        <li><a href="{{url_for('login')}}">Login</a></li>
+        <li><a href="{{url_for('signup')}}">SignUp</a></li>
+      </ul>
+    </div>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <section class="service">
+        <b>
+          <p class="para">&#9993; aishmuhammad388@gmail.com</p>
+        </b>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Ready to get started?
+        <a href="{{url_for('contact')}}">Contact Us</a> today!
+      </p>
+    </footer>
+  </body>
+</html>

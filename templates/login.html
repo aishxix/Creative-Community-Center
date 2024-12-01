@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Creative Community Center</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static' , filename = 'style.css')}}"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <li><h2>Creative Community Center</h2></li>
+      <ul>
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{url_for('service')}}">Services</a></li>
+        <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+        <li><a href="{{url_for('login')}}">Login</a></li>
+        <li><a href="{{url_for('signup')}}">SignUp</a></li>
+      </ul>
+    </div>
+
+    <div class="login-sec">
+      <h2>Login to Creative Community Center</h2>
+      <form action="{{url_for('login')}}" method="POST">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <a href="{{url_for('home')}}"
+            ><button type="button"><span>Login</span></button></a
+          >
+        </div>
+      </form>
+    </div>
+    <footer>
+      <p>
+        Ready to get started?
+        <a href="{{url_for('contact')}}">Contact Us</a> today!
+      </p>
+    </footer>
+  </body>
+</html>

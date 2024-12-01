@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Creative Community Center</title>
+    <link
+      rel="stylesheet"
+      href="{{url_for('static' , filename = 'style.css')}}"
+    />
+  </head>
+  <body>
+    <div class="navbar">
+      <li><h2>Creative Community Center</h2></li>
+      <ul>
+        <li><a href="{{url_for('home')}}">Home</a></li>
+        <li><a href="{{url_for('service')}}">Services</a></li>
+        <li><a href="{{url_for('contact')}}">Contact Us</a></li>
+        <li><a href="{{url_for('login')}}">Login</a></li>
+        <li><a href="{{url_for('signup')}}">SignUp</a></li>
+      </ul>
+    </div>
+
+    <section class="login-sec">
+      <h1>Sign Up for Creative Community Center</h1>
+      <form action="{{url_for('signup')}}" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="confirm-password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          required
+        />
+
+        <a href="{{url_for('home')}}"
+          ><button type="button"><span>Sign Up</span></button></a
+        >
+        <p>Already have an account?</p>
+        <a href="{{url_for('login')}}"
+          ><button type="button"><span>Login</span></button></a
+        >
+      </form>
+    </section>
+    <footer>
+      <p>
+        Ready to get started?
+        <a href="{{url_for('contact')}}">Contact Us</a> today!
+      </p>
+    </footer>
+  </body>
+</html>

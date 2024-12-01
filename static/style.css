@@ -1,0 +1,241 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  /* background-image: url(/static/img2.webp);
+  background-size: cover; */
+
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/static/img2.webp) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: transparent;
+  margin: 0;
+  padding: 20px;
+}
+.navbar {
+  background-color: #0c0910;
+  color: #ffffff;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+}
+.navbar a:hover {
+  border: 2px solid black;
+  border-radius: 4px;
+  background-color: #065143;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-sec {
+  max-width: 500px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-sec h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-sec label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-sec input[type="text"],
+.login-sec input[type="email"],
+.login-sec input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-sec button {
+  width: 100%;
+  padding: 10px;
+  background-color: #065143;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-sec button:hover {
+  background-color: #065143;
+}
+
+.login-sec p {
+  text-align: center;
+}
+
+.login-sec a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #065143;
+  color: white;
+  text-align: center;
+  padding: 32px 16px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+header p {
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+main {
+  padding: 32px 16px;
+}
+
+.service {
+  background-color: white;
+  margin: 16px auto;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service h2 {
+  font-size: 28px;
+  color: #065143;
+}
+
+.service p {
+  font-size: 16px;
+  color: #555;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.btn {
+  display: block;
+  margin: 0 auto;
+}
+button {
+  outline: none;
+  cursor: pointer;
+  border: none;
+  padding: 0.9rem 2rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.05rem;
+  font-weight: 700;
+  font-size: 17px;
+  border-radius: 500px;
+  overflow: hidden;
+  background: #065143;
+  color: ghostwhite;
+}
+
+button span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+}
+
+button:hover span {
+  color: white;
+}
+
+button::before,
+button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+button::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+button:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.para {
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #0c0910;
+  color: #333;
+  text-align: center;
+  padding: 16px;
+  margin-top: auto;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #065143;
+}
