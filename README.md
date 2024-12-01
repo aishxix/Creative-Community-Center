@@ -18,6 +18,10 @@ Co-working spaces for artists and designers.
 Maker labs with tools for woodworking, 3D printing, and prototyping.  
 
 ## Technology Stack
-**Frontend:** HTML, CSS, Python Flask Framework.    
+**Frontend:** HTML, CSS.  
 
-**Hosting**: Flask development server.
+**Backend:** Python (Flask).    
+
+## How to Run the Project  
+Copy & Paste this link into your browser.  
+
